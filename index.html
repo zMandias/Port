@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-black bg-opacity-90 shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-purple-300">Meu Portfólio</h1>
+      <ul class="flex gap-6">
+        <li><a href="#home" class="hover:text-purple-300 transition">Início</a></li>
+        <li><a href="#sobre" class="hover:text-purple-300 transition">Sobre</a></li>
+        <li><a href="#projetos" class="hover:text-purple-300 transition">Projetos</a></li>
+        <li><a href="#contato" class="hover:text-purple-300 transition">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center" data-aos="fade-up">
+    <img src="https://via.placeholder.com/150" alt="Foto" class="rounded-full border-4 border-purple-300 mb-6">
+    <h2 class="text-4xl font-bold mb-2">Olá, eu sou <span class="text-purple-300">Seu Nome</span></h2>
+    <p class="text-lg mb-6">Desenvolvedor Front-End</p>
+    <a href="#projetos" class="bg-purple-300 text-black px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition">Ver Projetos</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="bg-white text-black py-20 px-6" data-aos="fade-right">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
+      <p class="mb-6">Sou um desenvolvedor apaixonado por criar experiências web interativas e visualmente atraentes. Tenho experiência com HTML, CSS, JavaScript e frameworks modernos.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="px-4 py-2 bg-gray-200 rounded-full">HTML</span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full">CSS</span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full">JavaScript</span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full">Tailwind</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-gray-100 text-black py-20 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Projetos</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" alt="Projeto 1" class="rounded mb-4">
+          <h3 class="font-bold mb-2">Projeto 1</h3>
+          <p>Descrição breve do projeto.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" alt="Projeto 2" class="rounded mb-4">
+          <h3 class="font-bold mb-2">Projeto 2</h3>
+          <p>Descrição breve do projeto.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:scale-105 transition">
+          <img src="https://via.placeholder.com/300x200" alt="Projeto 3" class="rounded mb-4">
+          <h3 class="font-bold mb-2">Projeto 3</h3>
+          <p>Descrição breve do projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-black text-white py-20 px-6" data-aos="fade-left">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contato</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Miguel Artur Santos" class="w-full p-3 rounded text-black" required>
+        <input type="email" placeholder="Seu e-mail" class="w-full p-3 rounded text-black" required>
+        <textarea placeholder="Sua mensagem" class="w-full p-3 rounded text-black" rows="5"></textarea>
+        <button type="submit" class="bg-purple-300 text-black px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-black text-center py-4 text-gray-400">
+    © 2025 Meu Portfólio. Todos os direitos reservados.
+  </footer>
+
+  <button id="meuBotao">Clique aqui</button>
+  <p id="meuParagrafo">Texto original.</p>
+  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
