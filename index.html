@@ -23,29 +23,35 @@
   </header>
 
   <!-- Home -->
-  <section id="home" class="h-screen flex flex-col justify-center items-center text-center" data-aos="fade-up">
-    <img src="https://via.placeholder.com/150" alt="Foto" class="rounded-full border-4 border-purple-300 mb-6">
-    <h2 class="text-4xl font-bold mb-2">Olá, eu sou <span class="text-purple-300">Seu Nome</span></h2>
-    <p class="text-lg mb-6">Desenvolvedor Front-End</p>
-    <a href="#projetos" class="bg-purple-300 text-black px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition">Ver Projetos</a>
+  <section id="home" class="relative h-screen flex flex-col justify-center items-center text-center bg-black" data-aos="fade-up">
+    <!-- Círculo decorativo com gradiente removido -->
+    <img src="https://via.placeholder.com/150" alt="Foto" class="rounded-full border-4 border-purple-300 mb-6 relative z-10">
+    <h2 class="text-4xl font-bold mb-2 relative z-10">Olá, eu sou <span class="text-purple-300">Miguel Artur</span></h2>
+    <p class="text-lg mb-6 relative z-10">Desenvolvedor Front-End</p>
+    <a href="#projetos" class="bg-purple-300 text-black px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition relative z-10">Ver Projetos</a>
   </section>
 
   <!-- Sobre -->
-  <section id="sobre" class="bg-white text-black py-20 px-6" data-aos="fade-right">
+  <section id="sobre" class="bg-white text-black py-20 px-6" data-aos="fade-right" data-aos-duration="800">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
-      <p class="mb-6">Sou um desenvolvedor apaixonado por criar experiências web interativas e visualmente atraentes. Tenho experiência com HTML, CSS, JavaScript e frameworks modernos.</p>
+      <p class="mb-6">Sou um desenvolvedor ainda desbravando o mundo da tecnologia e maravilhado com tudo que ela pode proporcionar. Tenho experiência com HTML, CSS e JavaScript.</p>
       <div class="flex flex-wrap justify-center gap-4">
-        <span class="px-4 py-2 bg-gray-200 rounded-full">HTML</span>
-        <span class="px-4 py-2 bg-gray-200 rounded-full">CSS</span>
-        <span class="px-4 py-2 bg-gray-200 rounded-full">JavaScript</span>
-        <span class="px-4 py-2 bg-gray-200 rounded-full">Tailwind</span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-6 h-6">
+        </span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-6 h-6">
+        </span>
+        <span class="px-4 py-2 bg-gray-200 rounded-full flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-6 h-6">
+        </span>
       </div>
     </div>
   </section>
 
   <!-- Projetos -->
-  <section id="projetos" class="bg-gray-100 text-black py-20 px-6" data-aos="fade-up">
+  <section id="projetos" class="bg-gray-100 text-black py-20 px-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-12">Projetos</h2>
       <div class="grid md:grid-cols-3 gap-6">
@@ -69,26 +75,28 @@
   </section>
 
   <!-- Contato -->
-  <section id="contato" class="bg-black text-white py-20 px-6" data-aos="fade-left">
+  <section id="contato" class="bg-black text-white py-20 px-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Contato</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Miguel Artur Santos" class="w-full p-3 rounded text-black" required>
-        <input type="email" placeholder="Seu e-mail" class="w-full p-3 rounded text-black" required>
-        <textarea placeholder="Sua mensagem" class="w-full p-3 rounded text-black" rows="5"></textarea>
-        <button type="submit" class="bg-purple-300 text-black px-6 py-3 rounded-full font-semibold hover:bg-purple-400 transition">Enviar</button>
-      </form>
+      <p class="mb-4">Entre em contato pelo e-mail: <span class="text-purple-300">miguelsantosartur15@email.com</span></p>
+      <div class="flex justify-center gap-8 mt-6">
+        <a href="https://www.linkedin.com/in/miguel-artur-da-concei%C3%A7%C3%A3o-dos-santos-804636364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-12 h-12 hover:scale-110 transition">
+        </a>
+        <a href="https://discord.gg/3T2rRaQD/" target="_blank" rel="noopener" aria-label="Discord">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/discord.svg" alt="Discord" class="w-12 h-12 hover:scale-110 transition bg-white rounded-full p-2">
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 h-12 hover:scale-110 transition bg-white rounded-full p-2">
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer class="bg-black text-center py-4 text-gray-400">
-    © 2025 Meu Portfólio. Todos os direitos reservados.
   </footer>
-
-  <button id="meuBotao">Clique aqui</button>
-  <p id="meuParagrafo">Texto original.</p>
-  <script src="script.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
