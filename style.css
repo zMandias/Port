@@ -1,5 +1,5 @@
 /* Estilo personalizado para o botão de interatividade */
-#meuBotao {
+#Botao {
   position: fixed;
   bottom: 32px;
   right: 32px;
@@ -15,12 +15,12 @@
   z-index: 100;
 }
 
-#meuBotao:hover {
+#Botao:hover {
   background: linear-gradient(90deg, #c4b5fd, #a78bfa);
   transform: scale(1.08);
 }
 
-#meuParagrafo {
+#Paragrafo {
   position: fixed;
   bottom: 80px;
   right: 32px;
@@ -38,14 +38,14 @@
 
 /* Responsividade para mobile */
 @media (max-width: 640px) {
-  #meuBotao, #meuParagrafo {
+  #Botao, #Paragrafo {
     right: 16px;
     bottom: 16px;
     min-width: 120px;
     padding: 10px 16px;
     font-size: 0.95rem;
   }
-  #meuParagrafo {
+  #Paragrafo {
     bottom: 60px;
   }
 }
